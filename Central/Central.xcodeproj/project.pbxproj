@@ -13,6 +13,7 @@
 		8FED7186210B1EA80075F5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FED7185210B1EA80075F5F6 /* Assets.xcassets */; };
 		8FED7189210B1EA80075F5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FED7187210B1EA80075F5F6 /* LaunchScreen.storyboard */; };
 		8FED718C210B1EA80075F5F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FED718B210B1EA80075F5F6 /* main.m */; };
+		8FED7195210B1FC50075F5F6 /* BLECentralComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FED7193210B1FC50075F5F6 /* BLECentralComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		8FED7188210B1EA80075F5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FED718A210B1EA80075F5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FED718B210B1EA80075F5F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FED7193210B1FC50075F5F6 /* BLECentralComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECentralComponent.m; sourceTree = "<group>"; };
+		8FED7194210B1FC50075F5F6 /* BLECentralComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECentralComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		8FED717B210B1EA70075F5F6 /* Central */ = {
 			isa = PBXGroup;
 			children = (
+				8FED7192210B1FC50075F5F6 /* BLECentralComponent */,
 				8FED717C210B1EA70075F5F6 /* AppDelegate.h */,
 				8FED717D210B1EA70075F5F6 /* AppDelegate.m */,
 				8FED717F210B1EA70075F5F6 /* ViewController.h */,
@@ -69,6 +73,15 @@
 				8FED718B210B1EA80075F5F6 /* main.m */,
 			);
 			path = Central;
+			sourceTree = "<group>";
+		};
+		8FED7192210B1FC50075F5F6 /* BLECentralComponent */ = {
+			isa = PBXGroup;
+			children = (
+				8FED7193210B1FC50075F5F6 /* BLECentralComponent.m */,
+				8FED7194210B1FC50075F5F6 /* BLECentralComponent.h */,
+			);
+			path = BLECentralComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +115,11 @@
 				TargetAttributes = {
 					8FED7178210B1EA70075F5F6 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -144,6 +162,7 @@
 				8FED7181210B1EA70075F5F6 /* ViewController.m in Sources */,
 				8FED718C210B1EA80075F5F6 /* main.m in Sources */,
 				8FED717E210B1EA70075F5F6 /* AppDelegate.m in Sources */,
+				8FED7195210B1FC50075F5F6 /* BLECentralComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
